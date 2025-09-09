@@ -33,19 +33,19 @@ class Gato:
         print(f"{self.nombre}, el gato {self.raza}, está maullando: ¡Miau!")
 
 #Asignación de datos
-print("\nIngresa los datos del perro:")
+print("-------------------------------\n| Ingresa los datos del perro |\n-------------------------------")
 nombre_perro=input("Ingrese el nombre del perro: ")
-edad_perro=int(input("Ingrese la edad del perro: "))
+edad_perro=int(input("Ingrese la edad del perro (en años): "))
 raza_perro=input("Ingrese la raza del perro: ")
 perro=Perro(nombre_perro,edad_perro,raza_perro)
 
-print("\nIngresa los datos del gato:")
+print("------------------------------\n| Ingresa los datos del gato |\n------------------------------")
 nombre_gato=input("Ingrese el nombre del gato: ")
-edad_gato=int(input("Ingrese la edad del gato: "))
+edad_gato=int(input("Ingrese la edad del gato (en años): "))
 raza_gato=input("Ingrese la raza del gato: ")
 gato=Gato(nombre_gato,edad_gato,raza_gato)
 
 #Acciones animales
-print("---------------------")
+print("------------------------------")
 perro.ladrar()
 gato.maullar()
